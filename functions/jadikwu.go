@@ -1,7 +1,9 @@
 package main
 
+import "strings"
+
 // for go_reloaded project
-//converting uppercase to lowercase
+// converting uppercase to lowercase
 func ToLower(text string) string {
 	words := strings.Fields(text)
 	char := []string{}

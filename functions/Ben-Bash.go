@@ -1,5 +1,6 @@
 package main
 
+import "strings"
 
 func fixArticles(text string) string {
 	word := strings.Fields(text)
@@ -15,4 +16,3 @@ func fixArticles(text string) string {
 	}
 	return strings.Join(word, " ")
 }
-

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -31,4 +30,3 @@ func fixQuotes(input string) string {
 	}
 	return result
 }
-

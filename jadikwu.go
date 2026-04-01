@@ -1,3 +1,5 @@
+package main
+
 func ToLower(text string) string {
 	runes := []rune(text)
 	for i, char := range runes {

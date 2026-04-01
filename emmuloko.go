@@ -1,10 +1,4 @@
-package main
 
-import (
-	"fmt"
-	"strconv"
-	"strings"
-)
 
 func hexToDecimal(hexstr string) string {
 	e := strings.Fields(hexstr)
@@ -21,6 +15,4 @@ func hexToDecimal(hexstr string) string {
 	return strings.Join(e, " ")
 }
 
-func main() {
-	fmt.Println(hexToDecimal("1E (hex) files were added"))
-}
+

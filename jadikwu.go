@@ -1,14 +1,7 @@
 package main
 
-func ToLower(text string) string {
-	runes := []rune(text)
-	for i, char := range runes {
-		runes[i] = unicode.ToLower(char)
-	}
-	return string(runes)
-}
-
-// for go_reloaded 
+// for go_reloaded project
+//converting uppercase to lowercase
 func ToLower(text string) string {
 	words := strings.Fields(text)
 	char := []string{}

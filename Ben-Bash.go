@@ -1,3 +1,5 @@
+package main
+
 
 func fixArticles(text string) string {
 	word := strings.Fields(text)

@@ -1,3 +1,10 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
 func fixQuotes(input string) string {
 	inQuotes := false
 	quotes := ""
@@ -5,12 +12,11 @@ func fixQuotes(input string) string {
 	result := ""
 
 	for i, char := range input {
-		if !inQuotes && char == '\'' {
+		if !inQuotes && (char == '\'' || char == '"') {
 			quotes = string(char)
 			inQuotes = true
 			result += string(char)
 			start = i + 1
-			continue
 
 		} else if inQuotes && string(char) == quotes {
 			inside_text := input[start:i]
@@ -18,10 +24,11 @@ func fixQuotes(input string) string {
 			result = result + inside_text + string(char)
 
 			inQuotes = false
-			continue
+
 		} else if !inQuotes {
 			result += string(char)
 		}
 	}
 	return result
 }
+

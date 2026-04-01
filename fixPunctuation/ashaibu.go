@@ -11,3 +11,4 @@ func fixPunctuation(text string) string {
 	text = re.ReplaceAllString(text, "$1")
 	return text
 }
+func 

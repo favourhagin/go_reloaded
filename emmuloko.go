@@ -1,4 +1,4 @@
-
+package main
 
 func hexToDecimal(hexstr string) string {
 	e := strings.Fields(hexstr)

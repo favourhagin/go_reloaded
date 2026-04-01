@@ -1,9 +1,3 @@
-package main
-
-import (
-	"fmt"
-	"strings"
-)
 
 func fixArticles(text string) string {
 	word := strings.Fields(text)
@@ -19,6 +13,4 @@ func fixArticles(text string) string {
 	}
 	return strings.Join(word, " ")
 }
-func main() {
-	fmt.Println(fixArticles("the it was man. A amazing rock. A honest man. A book"))
-}
+
